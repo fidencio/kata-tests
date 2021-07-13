@@ -58,7 +58,7 @@ install_from_static_tarball() {
 	local tarball_url=$(get_version "externals.cri-containerd.tarball_url")
 	cri_containerd_tarball_version="${cri_containerd_tarball_version/v/}"
 
-	local tarball_name="cri-containerd-${cri_containerd_tarball_version}.${CONTAINERD_OS}-${CONTAIENRD_ARCH}.tar.gz"
+	local tarball_name="cri-containerd-cni-${cri_containerd_tarball_version}-${CONTAINERD_OS}-${CONTAIENRD_ARCH}.tar.gz"
 	local url="${tarball_url}/${tarball_name}"
 
 	echo "Download tarball from ${url}"
